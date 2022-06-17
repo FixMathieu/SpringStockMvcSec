@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 import fr.fms.dao.ArticleRepository;
-
+import fr.fms.dao.CategoryRepository;
 import fr.fms.entities.Article;
 
 @SpringBootApplication
 public class SpringStockMvcSecApplication implements CommandLineRunner  {
-
+	@Autowired
+	CategoryRepository categoryRepository;
 
 	@Autowired
 	ArticleRepository articleRepository;
